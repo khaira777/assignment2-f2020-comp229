@@ -38,12 +38,12 @@
   },
   "description": "comp229assignment2",
   "main": "server.js",
-  "author": "gurkirat khaira",
-  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/khaira777/assignment2-f2020-comp229.git"
   },
+  "author": "gurkirat khaira",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/khaira777/assignment2-f2020-comp229/issues"
   },
