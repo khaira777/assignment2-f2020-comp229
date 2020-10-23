@@ -30,7 +30,7 @@ mongoDb.once('open', () => {
 let indexRouter = require('../routes/index');
 let usersRouter = require('../routes/users');
 //let booksRouter = require('../routes/book');
-let contactsRouter = require('../routes/contact')
+let contactsRouter = require('../routes/contact');
 
 let app = express();
 
