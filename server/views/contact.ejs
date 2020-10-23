@@ -1,0 +1,59 @@
+<!--Gurkirat Singh Khaira - #301112565 - 9 Oct 2020 -->
+
+<!--partial files imported-->
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+
+  <!--jumbotron Main Content-->
+<div class="container">
+  <div class="jumbotron">
+    <h1 class="display-4"><%= title %></h1>
+
+    <!--horizontal line-->
+    <hr class="my-4">
+
+    <div class="row">
+    <!-- Divided page in 8:4 to fit content-->
+      <div class="col-sm-8">
+
+      <!--Form to get data-->
+        <form action="#" method="get" >
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+            <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="contact">Contact No.</label>
+            <input type="number" class="form-control" id="number" placeholder="Enter contact" required>
+            <small id="emailHelp" class="form-text text-muted">I'll never share your contact with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="3"></textarea>
+          </div>
+          <input class="btn btn-primary" type="submit" id="submit" value="Submit">
+          <input class="btn btn-warning" type="reset" id="reset" value="Reset">
+        </form>
+      </div>
+
+      <!--Details displayed in other part-->
+      <div class="col-sm-4">
+        <p><strong> Details</strong></p>
+        Gurkirat Singh Khaira<br>
+        Contact: 647-540-7044<br>
+        Address: <a href="https://goo.gl/maps/GZSqmrfDK5apFxtz9" target="_blank">23 Montoro Lane, Toronto, ON</a><br>
+        Mail: <a href="mailto:777gurkirat@gmail.com" target="_blank">777gurkirat@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include partials/bottom_nav.ejs %>
+
+<%- include partials/footer.ejs %>

@@ -1,0 +1,80 @@
+<!--Gurkirat Singh Khaira - #301112565 - 9 Oct 2020 -->
+
+<!--main nav-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <!--website logo-->
+    <a class="navbar-brand" href="/"><img src="/assets/images/logo.PNG" alt="Logo" width="48" height="48"> Gurkirat Khaira</a>
+
+    <!--button for nav bar that appears for small screen devices -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!--main nav bar links-->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+
+        <!--checking which page is active to set the active property to the nav bar item-->
+        <% if (title == "Home") {%>
+        <li class="nav-item active">
+          <% } else { %>
+        <li class="nav-item">
+          <% } %>
+          <a class="nav-link" href="/home"><i class="fas fa-lg fa-home"></i> Home </a>
+        </li>
+
+        <% if (title == "About Me") {%>
+        <li class="nav-item active">
+          <% } else { %>
+        <li class="nav-item">
+          <% } %>
+          <a class="nav-link" href="/about"><i class="fas fa-lg fa-info"></i> About </a>
+        </li>
+
+        <% if (title == "Projects") {%>
+        <li class="nav-item active">
+          <% } else { %>
+        <li class="nav-item">
+          <% } %>
+          <a class="nav-link" href="/projects"><i class="fas fa-lg fa-cogs"></i> Projects </a>
+        </li>
+
+        <% if (title == "Services") {%>
+        <li class="nav-item active">
+          <% } else { %>
+        <li class="nav-item">
+          <% } %>
+          <a class="nav-link" href="/services"><i class="fas fa-lg fa-map-signs"></i> Services </a>
+        </li>
+
+        <% if (title == "Book List") {%>
+        <li class="nav-item active">
+          <% } else { %>
+        <li class="nav-item">
+          <% } %>
+          <a class="nav-link" href="/book-list"><i class="fas fa-lg fa-book"></i> Books </a>
+        </li>
+
+        <% if (title == "Contact Me") {%>
+        <li class="nav-item active">
+          <% } else { %>
+        <li class="nav-item">
+          <% } %>
+          <a class="nav-link" href="/contact"><i class="fas fa-lg fa-phone"></i> Contact </a>
+        </li>
+
+        <% if(typeof displayName == 'string' && displayName ){ %>
+          <li class="navbar-text"><i class="fas fa-lg fa-user"></i> Welcome, <%= displayName %></li>
+          <li class="nav-item">
+          <a href="/logout" class="nav-link">
+            <i class="fas fa-lg fa-sign-out-alt"></i> Logout</a>
+        </li>
+        <% } else {%>
+          <li class="nav-item"><a href="/login" class="nav-link"><i class="fas fa-lg fa-sign-in-alt"></i> Login</a></li>
+        <% } %>
+
+      </ul>
+    </div>
+  </nav>
